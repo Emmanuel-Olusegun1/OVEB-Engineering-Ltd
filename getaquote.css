@@ -1,0 +1,172 @@
+/* contact section style */
+.csection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem;
+    background:#f0f0f0;
+    gap: 2rem;
+}
+/* Contact Info */
+.cinfo {
+    width: 48%;
+    padding: 2rem;
+}
+
+
+
+
+
+span.extra-text {
+    display: block;
+    margin-top: 1rem;
+}
+
+.cinfo .clink {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cinfo .clink a {
+    color: var(--main-color);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* Contact Form */
+.cform {
+    width: 48%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cform form {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.cform input,
+.cform textarea,
+.cform select {
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Form Row */
+.cform .input-split {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-split input {
+    width: 100%;
+}
+
+/* Button & Select */
+.cform .bsplit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+
+
+.cform select {
+    width: 65%;
+    padding: 1rem;
+    background: transparent;
+    border-bottom: solid var(--text-color) 1px;
+    color: var(--text-color);
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1024px) {
+    .csection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cinfo,
+    .cform {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .cinfo h2 {
+        font-size: 1.5rem;
+    }
+
+    .cinfo p,
+    .cinfo span.extra-text {
+        font-size: 1rem;
+    }
+
+    .cinfo .clink {
+        align-items: center;
+    }
+
+    .cform form {
+        font-size: 1.6rem;
+    }
+
+    .cform .input-split {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cform .bsplit {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cform button {
+        width: 100%;
+    }
+
+    .cform select {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cinfo h2 {
+        font-size: 1rem;
+    }
+
+    .cinfo p,
+    .cinfo span.extra-text {
+        font-size: 1rem;
+    }
+
+    .cform form {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cinfo h2 {
+        font-size: 1rem;
+    }
+
+    .cinfo p,
+    .cinfo span.extra-text {
+        font-size: 1rem;
+    }
+
+    .cform form {
+        font-size: 1rem;
+    }
+}
