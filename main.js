@@ -1,4 +1,4 @@
-
+// Navbar / Menu on small screen function
   const menuToggle = document.getElementById('menuToggle');
   const navDrawer = document.getElementById('navDrawer');
   
@@ -42,6 +42,27 @@
       icon.textContent = '+';
   }
 }
+
+// Back to top function
+document.addEventListener("DOMContentLoaded", function () {
+      const backToTop = document.getElementById("backToTop");
+
+      // Show button when user scrolls down
+      window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+              backToTop.classList.remove("hidden");
+              backToTop.classList.add("flex"); // Show button
+          } else {
+              backToTop.classList.add("hidden");
+              backToTop.classList.remove("flex");
+          }
+      });
+
+      // Scroll to top when button is clicked
+      backToTop.addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+  });
 
 
    //  AOS Initilizing
